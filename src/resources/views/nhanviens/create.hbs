@@ -1,0 +1,85 @@
+<h1>THÊM NHÂN VIÊN</h1>
+<div class="m-5">
+  <form method="POST" action="/nhanvien/store">
+
+    <label for="ho_ten" class="form-label"><h4>Họ và tên nhân viên</h4></label>
+    <input type="text" class="form-control" id="ho_ten" name="ho_ten">
+
+    <label for="gioi_tinh" class="form-label">Giới tính</label>
+    <input type="text" class="form-control" id="gioi_tinh" name="gioi_tinh">
+
+    <label for="ngay_sinh" class="form-label"> Ngày sinh </label>
+    <input type="date" class="form-control" id="ngay_sinh" name="ngay_sinh">
+
+    <label for="exampleFormControlInput1" class="form-label">Số nhà</label>
+    <input type="text" class="form-control" id="dia_chi.so_nha" name="dia_chi.so_nha" >
+    
+    <label for="exampleFormControlInput1" class="form-label">Khóm/ấp</label>
+    <input type="text" class="form-control" id="dia_chi.khom_ap" name="dia_chi.khom_ap" >
+
+    <label for="exampleFormControlInput1" class="form-label">Phường/Xã</label>
+    <input type="text" class="form-control" id="dia_chi.phuong_xa" name="dia_chi.phuong_xa" >
+
+    <label for="exampleFormControlInput1" class="form-label">Quận/Huyện</label>
+    <input type="text" class="form-control" id="dia_chi.quan_huyen" name="dia_chi.quan_huyen" >
+
+    <label for="exampleFormControlInput1" class="form-label">Tỉnh/Thành phố</label>
+    <input type="text" class="form-control" id="dia_chi.tinh_tp" name="dia_chi.tinh_tp" >
+{{!--  --}}
+    <label for="exampleFormControlInput1" class="form-label">Ngày vào ABIC</label>
+    <input type="date" class="form-control" id="ngay_vao_ABIC" name="ngay_vao_ABIC">
+
+    <label for="exampleFormControlInput1" class="form-label">Trình độ chuyên môn </label>
+    <input type="text" class="form-control" id="trinh_do_chuyen_mon" name="trinh_do_chuyen_mon"">
+
+    <label for="exampleFormControlInput1" class="form-label">Lớp nghiệp vụ </label> <br />
+    <label for="exampleFormControlInput1" class="form-label">- Ngày cấp </label>
+      <input type="date" class="form-control" id="lop_nghiep_vu.ngay_cap_chung_chi" name="lop_nghiep_vu.ngay_cap_chung_chi">
+    <label for="exampleFormControlInput1" class="form-label">- Nội dung </label>
+      <input type="text" class="form-control" id="lop_nghiep_vu.noi_dung" name="lop_nghiep_vu.noi_dung">
+
+    <label for="exampleFormControlInput1" class="form-label">Lớp bồi dưỡng </label><br />
+    <label for="exampleFormControlInput1" class="form-label">- Ngày đào tạo </label>
+      <input type="date" class="form-control" id="lop_boi_duong.ngay_dao_tao" name="lop_boi_duong.ngay_dao_tao">
+    <label for="exampleFormControlInput1" class="form-label">- Nội dung: </label>
+      <input type="text" class="form-control" id="lop_boi_duong.noi_dung" name="lop_boi_duong.noi_dung">
+{{!--     
+      <input type="text" class="form-control" id="lop_nghiep_vu.ngay_cap_chung_chi" name="lop_nghiep_vu.ngay_cap_chung_chi">
+    <label for="exampleFormControlInput1" class="form-label">- Nội dung: </label>
+      <input type="text" class="form-control" id="lop_nghiep_vu.noi_dung" name="lop_nghiep_vu.noi_dung">
+    <textarea class="form-control" id="exampleFormControlTextarea1" aria-valuetext="adas" >
+      - Ngày đào tạo: {{formattedDate nhanvien.lop_boi_duong.ngay_dao_tao}} 
+      - Nội dung: {{nhanvien.lop_boi_duong.noi_dung}}</textarea> --}}
+
+    <label for="exampleFormControlInput1" class="form-label">Đảng viên </label>
+    <div class="form-check">
+      <fieldset>
+        <input class="form-check-input" type="radio" value="true" id="dang_vien" name="dang_vien">
+        <label class="form-check-label" for="defaultCheck1">Là Đảng viên</label> <br />
+        <input class="form-check-input" type="radio" value="false" id="dang_vien" name="dang_vien">
+        <label class="form-check-label" for="defaultCheck1">Không là Đảng viên</label>
+      </fieldset>
+      
+    </div>
+    {{!-- <input type="text" class="form-control" id="dang_vien" name="dang_vien"> --}}
+
+    <label for="exampleFormControlInput1" class="form-label">Chức danh</label>
+    <input type="text" class="form-control" id="chuc_danh" name="chuc_danh">
+
+    <label for="exampleFormControlInput1" class="form-label">Bộ phận công tác</label> <br />
+    <label for="exampleFormControlInput1" class="form-label">- Phòng</label>
+    <input type="text" class="form-control" id="bo_phan_cong_tac.phong" name="bo_phan_cong_tac.phong">    
+    <label for="exampleFormControlInput1" class="form-label">- Chi nhánh</label>
+    <input type="text" class="form-control" id="bo_phan_cong_tac.chi_nhanh" name="bo_phan_cong_tac.chi_nhanh">
+
+    <label for="exampleFormControlInput1" class="form-label">Ngày nghỉ hưu</label>
+    <input type="date" class="form-control" id="ngay_nghi_huu" name="ngay_nghi_huu">
+    
+    <label for="exampleFormControlInput1" class="form-label">Ghi chú</label>
+    <input type="text" class="form-control" id="ghi_chu" name="ghi_chu">
+
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+
+  </form>
+
+</div>

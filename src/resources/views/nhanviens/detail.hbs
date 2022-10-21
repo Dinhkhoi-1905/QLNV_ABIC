@@ -1,0 +1,33 @@
+<h1>CHI TIẾT NHÂN VIÊN</h1>
+<div class="m-5">
+  <label for="exampleFormControlInput1" class="form-label">Họ và tên nhân viên</label>
+  <input type="text" class="form-control" id="name" value="{{nhanvien.ho_ten}}" disabled>
+  <label for="exampleFormControlInput1" class="form-label">Giới tính</label>
+  <input type="text" class="form-control" id="sex" value="{{nhanvien.gioi_tinh}}"disabled>
+  <label for="exampleFormControlInput1" class="form-label">Ngày sinh</label>
+  <input type="text" class="form-control" id="dateofbirth" value="{{formattedDate nhanvien.ngay_sinh}}"disabled>
+  <label for="exampleFormControlInput1" class="form-label">Địa chỉ</label>
+  <input type="text" class="form-control" id="name" value="{{nhanvien.dia_chi.so_nha}}, {{nhanvien.dia_chi.khom_ap}},{{nhanvien.dia_chi.quan_huyen}},{{nhanvien.dia_chi.tinh_tp}}" disabled>
+  <label for="exampleFormControlInput1" class="form-label">Ngày vào ABIC</label>
+  <input type="text" class="form-control" id="sex" value="{{formattedDate nhanvien.ngay_vao_ABIC}}"disabled>
+  <label for="exampleFormControlInput1" class="form-label">Trình độ chuyên môn </label>
+  <input type="text" class="form-control" id="dateofbirth" value="{{nhanvien.trinh_do_chuyen_mon}}"disabled>
+  <label for="exampleFormControlInput1" class="form-label">Lớp nghiệp vụ </label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" aria-valuetext="adas" disabled>
+    - Ngày cấp: {{formattedDate nhanvien.lop_nghiep_vu.ngay_cap_chung_chi}} 
+    - Nội dung: {{nhanvien.lop_nghiep_vu.noi_dung}}</textarea>
+  <label for="exampleFormControlInput1" class="form-label">Lớp bồi dưỡng </label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" aria-valuetext="adas" disabled>
+    - Ngày đào tạo: {{formattedDate nhanvien.lop_boi_duong.ngay_dao_tao}} 
+    - Nội dung: {{nhanvien.lop_boi_duong.noi_dung}}</textarea>
+  <label for="exampleFormControlInput1" class="form-label">Là Đảng viên </label>
+  <input type="text" class="form-control" id="dateofbirth" value="{{nhanvien.dang_vien}}"disabled>
+  <label for="exampleFormControlInput1" class="form-label">Chức danh</label>
+  <input type="text" class="form-control" id="dateofbirth" value="{{nhanvien.chuc_danh}}"disabled>
+  <label for="exampleFormControlInput1" class="form-label">Bộ phận công tác</label>
+  <input type="text" class="form-control" id="dateofbirth" value="Phòng {{nhanvien.bo_phan_cong_tac.phong}} - Chi nhánh {{nhanvien.bo_phan_cong_tac.chi_nhanh}}"disabled>
+  <label for="exampleFormControlInput1" class="form-label">Ngày nghỉ hưu</label>
+  <input type="text" class="form-control" id="dateofbirth" value="{{formattedDate nhanvien.ngay_nghi_huu}}"disabled>
+  <label for="exampleFormControlInput1" class="form-label">Ghi chú</label>
+  <input type="text" class="form-control" id="dateofbirth" value="{{nhanvien.ghi_chu}}"disabled>
+</div>

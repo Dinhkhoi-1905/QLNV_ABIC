@@ -1,0 +1,35 @@
+<div class="mt-4 container-lg">
+        <a class="btn btn-primary" href="/nhanvien/create" role="button"><strong>Thêm nhân viên</strong></a>
+    <div class="row">
+
+            <table class="table">
+                {{!-- Title --}}
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Họ và tên</th>
+                        <th scope="col">Địa chỉ</th>
+                        <th scope="col">Giới tính</th>
+                        <th scope="col">Thao tác</th>
+                    </tr>
+                </thead>
+                {{!-- Body --}}
+                <tbody>
+                    {{#each nhanviens as |nhanvien|}}
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>{{nhanvien.ho_ten}}</td>
+                            {{!-- {{#with nhanvien.dia_chi}}
+                                <td>{{dia_chi}}</td>
+                            {{/with}} --}}
+                            {{#with nhanvien.dia_chi}}
+                            <td>{{khom_ap}}</td>
+                            {{/with}}
+                            <td>{{nhanvien.gioi_tinh}}</td>
+                            <td><a href="/nhanvien/{{this._id}}">Xem chi tiết</a></td>
+                        </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+    </div>
+</div>

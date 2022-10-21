@@ -1,0 +1,42 @@
+{
+  "name": "helloworldfolder",
+  "version": "1.0.0",
+  "description": "My fist web app with NodeJS",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon --inspect src/index.js",
+    "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N00bKi660/NodeJS_Hello.git"
+  },
+  "keywords": [
+    "nodejs",
+    "khoi",
+    "hello"
+  ],
+  "author": "Dinh Khoi Tran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/N00bKi660/NodeJS_Hello/issues"
+  },
+  "homepage": "https://github.com/N00bKi660/NodeJS_Hello#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "method-override": "^3.0.0",
+    "moment": "^2.29.4",
+    "mongoose": "^6.5.2",
+    "mongoose-date-format": "^1.2.0",
+    "mongoose-slug-generator": "^1.0.4",
+    "nodemon": "^2.0.19",
+    "serve-index": "^1.9.1",
+    "serve-static": "^1.15.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "node-sass": "^7.0.1"
+  }
+}

@@ -1,0 +1,17 @@
+@import 'variables';
+.test {
+    font-size: 1 rem;
+    color: red;
+}
+
+h1 {
+    color: rgb(229, 28, 28);
+}
+
+h2 {
+    color: $my-color;
+}
+.form-width{
+    width: 500px;
+    margin-left: 100px;
+  }
